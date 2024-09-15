@@ -12,6 +12,7 @@ import Location from "./components/Location";
 import Login from "./components/Login";
 import Registration from "./components/Registration";
 import Signup from "./components/Signup";
+import Entry from "./components/Entry";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route exact path="/login" element={<Login/>}></Route>
         <Route exact path="/registration" element={<Registration/>}></Route>
         <Route exact path="/signup" element={<Signup/>}></Route>
+        <Route exact path="/entry" element={<Entry/>}></Route>
       </Routes>
      </Router>
     </>
