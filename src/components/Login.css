@@ -1,0 +1,77 @@
+/* Centering the form and container */
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f6f9;
+  }
+  
+  /* Form container */
+  .w-50 {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling the input fields */
+  .form-control {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Form label styles */
+  .form-label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #495057;
+  }
+  
+  /* Help text for email */
+  #emailHelp {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  /* Submit button */
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Sign up button */
+  .btn-secondary {
+    background-color: #6c757d;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .w-50 {
+      max-width: 100%;
+      padding: 1rem;
+    }
+  }
+  

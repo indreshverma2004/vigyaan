@@ -1,0 +1,49 @@
+
+.navbar {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .navbar a {
+    margin-right: 1rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  .navbar .nav-link {
+    font-size: 1.2rem;
+  }
+  
+  /* Centering the content */
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  /* Make sure the layout is responsive */
+  @media (max-width: 768px) {
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar a {
+      margin-bottom: 0.5rem;
+    }
+  }
+  

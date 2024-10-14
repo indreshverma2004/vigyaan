@@ -32,4 +32,22 @@ router.post('/decrementSlot', async (req, res) => {
   }
 });
 
+
+router.post('/incrementSlot', async (req, res) => {
+    try {
+      const slot = await SlotModel.findOne();
+      
+      if (!slot) {
+        return res.status(400).json({ success: false, message: 'Slot not found' });
+      }
+  
+      slot.slots += 1; // Increase available slots by 1
+      await slot.save();
+  
+      return res.json({ success: true, slots: slot.slots });
+    } catch (err) {
+      return res.status(500).json({ success: false, message: 'Server error' });
+    }
+  });
+
 module.exports = router;
